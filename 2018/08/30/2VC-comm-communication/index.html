@@ -5,19 +5,21 @@
   
 
   
-  <title>如何安装及使用HEXO博客框架 | Hexo</title>
+  <title>VC_串口（comm）通信案例 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="欢迎来到我的第一篇博客，这里我将介绍如何用hexo专业博客框架进行博客的撰写。 1.下载安装Node.js及GitNode.js：https://git-scm.com  or  https://git-scm.comGit：https://nodejs.org/en/  or  https://git-scm.com 2.打开 Git Bash,接下来的命令均在Git Bash中执行安装 Hex">
+  <meta name="description" content="欢迎来到我的博客，这里我将介绍在VC++ MFC应用中对于comm口通信的使用小案例。这里使用的软件是：Visual Studio 2010，注意，可能2017不兼容。 1.1.    新建项目vc++ MFC应用程序 基于对话框窗口2.设置对话框为如图所示 安装 Hexo ：$npm install -g hexo-cli新建博客文件夹：$hexo init blog定位到该文件：$cd blo">
 <meta property="og:type" content="article">
-<meta property="og:title" content="如何安装及使用HEXO博客框架">
-<meta property="og:url" content="http://yoursite.com/2018/06/12/how -to-use-hexo/index.html">
+<meta property="og:title" content="VC_串口（comm）通信案例">
+<meta property="og:url" content="http://yoursite.com/2018/08/30/2VC-comm-communication/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="欢迎来到我的第一篇博客，这里我将介绍如何用hexo专业博客框架进行博客的撰写。 1.下载安装Node.js及GitNode.js：https://git-scm.com  or  https://git-scm.comGit：https://nodejs.org/en/  or  https://git-scm.com 2.打开 Git Bash,接下来的命令均在Git Bash中执行安装 Hex">
+<meta property="og:description" content="欢迎来到我的博客，这里我将介绍在VC++ MFC应用中对于comm口通信的使用小案例。这里使用的软件是：Visual Studio 2010，注意，可能2017不兼容。 1.1.    新建项目vc++ MFC应用程序 基于对话框窗口2.设置对话框为如图所示 安装 Hexo ：$npm install -g hexo-cli新建博客文件夹：$hexo init blog定位到该文件：$cd blo">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-06-12T14:48:57.033Z">
+<meta property="og:image" content="http://yoursite.com/img/2pic-1.jpg">
+<meta property="og:updated_time" content="2018-08-30T02:07:48.447Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="如何安装及使用HEXO博客框架">
-<meta name="twitter:description" content="欢迎来到我的第一篇博客，这里我将介绍如何用hexo专业博客框架进行博客的撰写。 1.下载安装Node.js及GitNode.js：https://git-scm.com  or  https://git-scm.comGit：https://nodejs.org/en/  or  https://git-scm.com 2.打开 Git Bash,接下来的命令均在Git Bash中执行安装 Hex">
+<meta name="twitter:title" content="VC_串口（comm）通信案例">
+<meta name="twitter:description" content="欢迎来到我的博客，这里我将介绍在VC++ MFC应用中对于comm口通信的使用小案例。这里使用的软件是：Visual Studio 2010，注意，可能2017不兼容。 1.1.    新建项目vc++ MFC应用程序 基于对话框窗口2.设置对话框为如图所示 安装 Hexo ：$npm install -g hexo-cli新建博客文件夹：$hexo init blog定位到该文件：$cd blo">
+<meta name="twitter:image" content="http://yoursite.com/img/2pic-1.jpg">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -64,10 +66,10 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="post-how -to-use-hexo" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-2VC-comm-communication" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2018/06/12/how -to-use-hexo/" class="article-date">
-  <time datetime="2018-06-12T11:11:02.875Z" itemprop="datePublished">2018-06-12</time>
+    <a href="/2018/08/30/2VC-comm-communication/" class="article-date">
+  <time datetime="2018-08-30T01:54:50.709Z" itemprop="datePublished">2018-08-30</time>
 </a>
     
   </div>
@@ -78,7 +80,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      如何安装及使用HEXO博客框架
+      VC_串口（comm）通信案例
     </h1>
   
 
@@ -86,9 +88,9 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>欢迎来到我的第一篇博客，这里我将介绍如何用hexo专业博客框架进行博客的撰写。</p>
-<h2 id="1-下载安装Node-js及Git"><a href="#1-下载安装Node-js及Git" class="headerlink" title="1.下载安装Node.js及Git"></a>1.下载安装Node.js及Git</h2><p>Node.js：<a href="https://git-scm.com" target="_blank" rel="noopener">https://git-scm.com</a>  or  <a href="https://git-scm.com" target="_blank" rel="noopener">https://git-scm.com</a><br>Git：<a href="https://nodejs.org/en/" target="_blank" rel="noopener">https://nodejs.org/en/</a>  or  <a href="https://git-scm.com" target="_blank" rel="noopener">https://git-scm.com</a></p>
-<h2 id="2-打开-Git-Bash-接下来的命令均在Git-Bash中执行"><a href="#2-打开-Git-Bash-接下来的命令均在Git-Bash中执行" class="headerlink" title="2.打开 Git Bash,接下来的命令均在Git Bash中执行"></a>2.打开 Git Bash,接下来的命令均在Git Bash中执行</h2><p>安装 Hexo ：$npm install -g hexo-cli<br>新建博客文件夹：$hexo init blog<br>定位到该文件：$cd blog<br>安装依赖包： $npm install<br>打开本地服务：$hexo server</p>
+        <p>欢迎来到我的博客，这里我将介绍在VC++ MFC应用中对于comm口通信的使用小案例。这里使用的软件是：Visual Studio 2010，注意，可能2017不兼容。</p>
+<h2 id="1-1-新建项目vc-MFC应用程序-基于对话框窗口"><a href="#1-1-新建项目vc-MFC应用程序-基于对话框窗口" class="headerlink" title="1.1.    新建项目vc++ MFC应用程序 基于对话框窗口"></a>1.1.    新建项目vc++ MFC应用程序 基于对话框窗口</h2><h2 id="2-设置对话框为如图所示"><a href="#2-设置对话框为如图所示" class="headerlink" title="2.设置对话框为如图所示"></a>2.设置对话框为如图所示</h2><p><img src="/img/2pic-1.jpg" alt="对话框界面图片"></p>
+<p>安装 Hexo ：$npm install -g hexo-cli<br>新建博客文件夹：$hexo init blog<br>定位到该文件：$cd blog<br>安装依赖包： $npm install<br>打开本地服务：$hexo server</p>
 <p>. blog 文件夹目录<br>├── _config.yml   网站的 配置 信息<br>├── package.json  应用程序的信息<br>├── scaffolds     模版 文件夹<br>├── source        资源文件夹是存放用户资源的地方<br>|   ├── _drafts<br>|   └── _posts<br>└── themes        主题 文件夹</p>
 <h2 id="3-测试和配置"><a href="#3-测试和配置" class="headerlink" title="3.测试和配置"></a>3.测试和配置</h2><ol>
 <li>测试：打开 Git Bush Here，输入 git –version，出现版本号则说明 Git 环境配置成功</li>
@@ -127,7 +129,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/06/12/how -to-use-hexo/" data-id="cjlg24xb40001souedkz9gzeb" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/08/30/2VC-comm-communication/" data-id="cjlg24xax0000soueb554u3g6" class="article-share-link">Share</a>
       
       
     </footer>
@@ -136,15 +138,11 @@
     
 <nav id="article-nav">
   
-    <a href="/2018/08/30/2VC-comm-communication/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          VC_串口（comm）通信案例
-        
-      </div>
-    </a>
   
+    <a href="/2018/06/12/how -to-use-hexo/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">如何安装及使用HEXO博客框架</div>
+    </a>
   
 </nav>
 
