@@ -18,11 +18,11 @@
     <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.css">
     <title>
         
-        如何安装及使用HEXO博客框架｜WuYanyun&#39;s blog
+        VC_串口（comm）通信案例｜WuYanyun&#39;s blog
         
     </title>
 
-    <link rel="canonical" href="https://microyan.github.io/2018/06/12/how -to-use-hexo/">
+    <link rel="canonical" href="https://microyan.github.io/2018/08/30/VC-comm-communication/">
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -146,12 +146,12 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 text-center">
                 <div class="post-heading">
-                    <h1>如何安装及使用HEXO博客框架</h1>
+                    <h1>VC_串口（comm）通信案例</h1>
                     
                     <span class="meta">
                          作者 MicroYan
                         <span>
-                          日期 2018-06-12
+                          日期 2018-08-30
                          </span>
                     </span>
                     <div class="tags text-center">
@@ -163,7 +163,7 @@
     </div>
     <div class="post-title-haojen">
         <span>
-            如何安装及使用HEXO博客框架
+            VC_串口（comm）通信案例
         </span>
     </div>
 </header>
@@ -174,54 +174,26 @@
         <div class="row">
             <!-- Post Container -->
             <div class="col-lg-8 col-lg-offset-1 col-sm-9 post-container">
-                <p>欢迎来到我的第一篇博客，这里我将介绍如何用hexo专业博客框架进行博客的撰写。</p>
-<h2 id="1-下载安装Node-js及Git"><a href="#1-下载安装Node-js及Git" class="headerlink" title="1.下载安装Node.js及Git"></a>1.下载安装Node.js及Git</h2><p>Node.js：<a href="https://git-scm.com" target="_blank" rel="noopener">https://git-scm.com</a>  or  <a href="https://git-scm.com" target="_blank" rel="noopener">https://git-scm.com</a><br>Git：<a href="https://nodejs.org/en/" target="_blank" rel="noopener">https://nodejs.org/en/</a>  or  <a href="https://git-scm.com" target="_blank" rel="noopener">https://git-scm.com</a></p>
-<h2 id="2-打开-Git-Bash-接下来的命令均在Git-Bash中执行"><a href="#2-打开-Git-Bash-接下来的命令均在Git-Bash中执行" class="headerlink" title="2.打开 Git Bash,接下来的命令均在Git Bash中执行"></a>2.打开 Git Bash,接下来的命令均在Git Bash中执行</h2><p>安装 Hexo ：$npm install -g hexo-cli<br>新建博客文件夹：$hexo init blog<br>定位到该文件：$cd blog<br>安装依赖包： $npm install<br>打开本地服务：$hexo server</p>
-<p>. blog 文件夹目录<br>├── _config.yml   网站的 配置 信息<br>├── package.json  应用程序的信息<br>├── scaffolds     模版 文件夹<br>├── source        资源文件夹是存放用户资源的地方<br>|   ├── _drafts<br>|   └── _posts<br>└── themes        主题 文件夹</p>
-<h2 id="3-测试和配置"><a href="#3-测试和配置" class="headerlink" title="3.测试和配置"></a>3.测试和配置</h2><ol>
-<li>测试：打开 Git Bush Here，输入 git –version，出现版本号则说明 Git 环境配置成功</li>
-<li>配置本机的Git：<br>$ git config –global user.name “你的名字”<br>$ git config –global user.email “你的邮箱”</li>
-<li>生成密匙：$ ssh-keygen -t rsa -C “邮箱同上”</li>
-<li>复制密匙：在ｃ盘用户.ssh文件下用文本编辑器打开id_rsa.pub并复制文件的内容。</li>
-<li>提交公钥：在github官网上，点击用户下Settings的SSH and GPG keys下New SSH key添加之前的密匙复制进内容就可以了。</li>
-<li>连接完成测试：$ssh <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a></li>
-</ol>
-<h2 id="4-配置网站信息-config-yml"><a href="#4-配置网站信息-config-yml" class="headerlink" title="4.配置网站信息  _config.yml"></a>4.配置网站信息  _config.yml</h2><p>配置详情网站：<a href="https://hexo.io/zh-cn/docs/configuration.html" target="_blank" rel="noopener">https://hexo.io/zh-cn/docs/configuration.html</a></p>
-<p>theme    当前主题名称。值为false时禁用主题<br>deploy    部署部分的设置</p>
-<p>github获取ssh密钥</p>
-<p>deploy:<br>    type: git<br>    repository: <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>:microyan/microyan.github.io.git<br>    branch: master</p>
-<h2 id="5-指令"><a href="#5-指令" class="headerlink" title="5.指令"></a>5.指令</h2><ol>
-<li>$npm update hexo -g  #升级  </li>
-<li><p>$hexo init           #初始化</p>
-</li>
-<li><p>hexo new “文章名” == hexo n “文章名” #新建文章</p>
-</li>
-<li>hexo generate == hexo g    #生成本地静态文件</li>
-<li>hexo server == hexo s #启动服务预览</li>
-<li>hexo deploy == hexo d #部署</li>
-<li><p>hexo clean #清除缓存</p>
-</li>
-<li><p>hexo new “文章名” #新建文章</p>
-</li>
-<li><p>hexo new page “pageName” #新建页面</p>
-</li>
-<li><p>hexo n #写文章</p>
-</li>
-<li>hexo g #生成静态文件</li>
-<li>hexo d #部署  可与hexo g合并为 hexo d -g  部署并上传</li>
-</ol>
-<h2 id="6-文章撰写"><a href="#6-文章撰写" class="headerlink" title="6.文章撰写"></a>6.文章撰写</h2><p>目录：source/_posts/文章名.md</p>
+                <p>欢迎来到我的博客，这里我将介绍在VC++ MFC应用中对于comm口通信的使用小案例。这里使用的软件是：Visual Studio 2010，注意，可能2017不兼容。</p>
+<h2 id="1-新建项目vc-MFC应用程序-基于对话框窗口"><a href="#1-新建项目vc-MFC应用程序-基于对话框窗口" class="headerlink" title="1.新建项目vc++ MFC应用程序 基于对话框窗口"></a>1.新建项目vc++ MFC应用程序 基于对话框窗口</h2><h2 id="2-设置对话框为如图所示"><a href="#2-设置对话框为如图所示" class="headerlink" title="2.设置对话框为如图所示"></a>2.设置对话框为如图所示</h2><p><img src="/img/2pic-1.png" alt="对话框界面图片"></p>
+<h2 id="3-上图中电话图标为串口控件，右击窗口插入ActiveX控件，选择-Microsoft-Communications-Control-添加，如果没有，自行网上搜索串口通信控件MSCOMM，下载和安装注册"><a href="#3-上图中电话图标为串口控件，右击窗口插入ActiveX控件，选择-Microsoft-Communications-Control-添加，如果没有，自行网上搜索串口通信控件MSCOMM，下载和安装注册" class="headerlink" title="3.上图中电话图标为串口控件，右击窗口插入ActiveX控件，选择 Microsoft Communications Control 添加，如果没有，自行网上搜索串口通信控件MSCOMM，下载和安装注册"></a>3.上图中电话图标为串口控件，右击窗口插入ActiveX控件，选择 Microsoft Communications Control 添加，如果没有，自行网上搜索串口通信控件MSCOMM，下载和安装注册</h2><h2 id="4-右击窗口类向导-成员变量，设置如图："><a href="#4-右击窗口类向导-成员变量，设置如图：" class="headerlink" title="4.右击窗口类向导-成员变量，设置如图："></a>4.右击窗口类向导-成员变量，设置如图：</h2><p><img src="/img/2pic-2.png" alt="对话框界面图片"></p>
+<p>注意：添加成员变量时选择类别为：Value</p>
+<h2 id="5-右击串口控件（电话）添加变量，我这里名为：m-CMscomm1"><a href="#5-右击串口控件（电话）添加变量，我这里名为：m-CMscomm1" class="headerlink" title="5.右击串口控件（电话）添加变量，我这里名为：m_CMscomm1"></a>5.右击串口控件（电话）添加变量，我这里名为：m_CMscomm1</h2><h2 id="6-再右击串口控件，添加事件处理程序选择OnComm"><a href="#6-再右击串口控件，添加事件处理程序选择OnComm" class="headerlink" title="6.再右击串口控件，添加事件处理程序选择OnComm"></a>6.再右击串口控件，添加事件处理程序选择OnComm</h2><h2 id="7-代码配置串口如图："><a href="#7-代码配置串口如图：" class="headerlink" title="7.代码配置串口如图："></a>7.代码配置串口如图：</h2><p><img src="/img/2pic-3.png" alt="对话框界面图片"></p>
+<h2 id="8-OnComm代码接受数据如图："><a href="#8-OnComm代码接受数据如图：" class="headerlink" title="8.OnComm代码接受数据如图："></a>8.OnComm代码接受数据如图：</h2><p><img src="/img/2pic-4.png" alt="对话框界面图片"></p>
+<h2 id="9-按钮代码发送数据如图："><a href="#9-按钮代码发送数据如图：" class="headerlink" title="9.按钮代码发送数据如图："></a>9.按钮代码发送数据如图：</h2><p><img src="/img/2pic-5.png" alt="对话框界面图片"></p>
+<h2 id="10-完成，测试如图："><a href="#10-完成，测试如图：" class="headerlink" title="10.完成，测试如图："></a>10.完成，测试如图：</h2><p><img src="/img/2pic-6.png" alt="对话框界面图片"></p>
+<p>#如有疑问，可联系qq：1414079551</p>
 <h3 id="最后，感谢你的阅读，希望能够帮到你！"><a href="#最后，感谢你的阅读，希望能够帮到你！" class="headerlink" title="最后，感谢你的阅读，希望能够帮到你！"></a>最后，感谢你的阅读，希望能够帮到你！</h3>
                 <hr>
                 
 
                 <ul class="pager">
                     
-                    <li class="previous">
-                        <a href="/2018/08/30/VC-comm-communication/" data-toggle="tooltip" data-placement="top"
-                           title="VC_串口（comm）通信案例">&larr; Previous Post</a>
-                    </li>
                     
+                    <li class="next">
+                        <a href="/2018/06/12/how -to-use-hexo/" data-toggle="tooltip" data-placement="top"
+                           title="如何安装及使用HEXO博客框架">Next Post &rarr;</a>
+                    </li>
                     
                 </ul>
 
@@ -239,7 +211,7 @@
 
             <div class="hidden-xs col-sm-3 toc-col">
                 <div class="toc-wrap">
-                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-下载安装Node-js及Git"><span class="toc-text">1.下载安装Node.js及Git</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-打开-Git-Bash-接下来的命令均在Git-Bash中执行"><span class="toc-text">2.打开 Git Bash,接下来的命令均在Git Bash中执行</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-测试和配置"><span class="toc-text">3.测试和配置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-配置网站信息-config-yml"><span class="toc-text">4.配置网站信息  _config.yml</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-指令"><span class="toc-text">5.指令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-文章撰写"><span class="toc-text">6.文章撰写</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#最后，感谢你的阅读，希望能够帮到你！"><span class="toc-text">最后，感谢你的阅读，希望能够帮到你！</span></a></li></ol></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-新建项目vc-MFC应用程序-基于对话框窗口"><span class="toc-text">1.新建项目vc++ MFC应用程序 基于对话框窗口</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-设置对话框为如图所示"><span class="toc-text">2.设置对话框为如图所示</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-上图中电话图标为串口控件，右击窗口插入ActiveX控件，选择-Microsoft-Communications-Control-添加，如果没有，自行网上搜索串口通信控件MSCOMM，下载和安装注册"><span class="toc-text">3.上图中电话图标为串口控件，右击窗口插入ActiveX控件，选择 Microsoft Communications Control 添加，如果没有，自行网上搜索串口通信控件MSCOMM，下载和安装注册</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-右击窗口类向导-成员变量，设置如图："><span class="toc-text">4.右击窗口类向导-成员变量，设置如图：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-右击串口控件（电话）添加变量，我这里名为：m-CMscomm1"><span class="toc-text">5.右击串口控件（电话）添加变量，我这里名为：m_CMscomm1</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-再右击串口控件，添加事件处理程序选择OnComm"><span class="toc-text">6.再右击串口控件，添加事件处理程序选择OnComm</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#7-代码配置串口如图："><span class="toc-text">7.代码配置串口如图：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#8-OnComm代码接受数据如图："><span class="toc-text">8.OnComm代码接受数据如图：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#9-按钮代码发送数据如图："><span class="toc-text">9.按钮代码发送数据如图：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#10-完成，测试如图："><span class="toc-text">10.完成，测试如图：</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#最后，感谢你的阅读，希望能够帮到你！"><span class="toc-text">最后，感谢你的阅读，希望能够帮到你！</span></a></li></ol></li></ol>
                 </div>
             </div>
         </div>
