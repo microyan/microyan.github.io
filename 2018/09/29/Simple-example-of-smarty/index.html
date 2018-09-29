@@ -180,9 +180,8 @@
 <h2 id="4-所以我们需要创建相对应的文件夹：主要是templates，运行成功会生成templates-c下的文件"><a href="#4-所以我们需要创建相对应的文件夹：主要是templates，运行成功会生成templates-c下的文件" class="headerlink" title="4.所以我们需要创建相对应的文件夹：主要是templates，运行成功会生成templates_c下的文件"></a>4.所以我们需要创建相对应的文件夹：主要是templates，运行成功会生成templates_c下的文件</h2><p><img src="/img/3pic-2.png" alt="全部文件图片"></p>
 <h2 id="5-简单代码实例"><a href="#5-简单代码实例" class="headerlink" title="5.简单代码实例"></a>5.简单代码实例</h2><p>index.php<br>&lt;?php<br>require ‘./libs/Smarty.class.php’;<br>$smarty=new Smarty();<br>$name=’你炎哥’;<br>$smarty-&gt;assign( ‘name’ , $name );<br>$smarty-&gt;display(‘./index.html’);<br>?&gt;</p>
 <p>index.html</p>
-<html xmlns="http://www.w3.org/1999/xhtml"><br><head><br><meta http-equiv="Content-Type" content="text/html; charset=gb2312"><br><title>无标题文档</title><br></head><br><body><br>它的名字叫{$name}<br></body><br></html>
-
-<p>运行index.php效果：<br><img src="/img/3pic-3.png" alt="对话框界面图片"></p>
+<p>它的名字叫{$name}</p>
+<p>运行index.php效果：<br><img src="/img/3pic-3.png" alt="html效果图片"></p>
 <h2 id="6-其他知识："><a href="#6-其他知识：" class="headerlink" title="6.其他知识："></a>6.其他知识：</h2><p>变量声明1：$smarty-&gt;assign(‘name’,’值’);<br>变量声明2：{assign var=’name’  value=’值’}<br>变量使用：{$name}</p>
 <p>数组的使用：数组[下标、数组.下标</p>
 <p>对象声明和c+相同，使用：{$duixianming-&gt;shuxingming}</p>
